@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Rule Engine</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+        
+        <div class="form-group">
+            <h2>Create Rule</h2>
+            <textarea id="ruleString" rows="4" placeholder="Enter rule string..."></textarea>
+            <button id="createRuleBtn">Create Rule</button>
+        </div>
+
+        <div class="form-group">
+            <h2>Combine Rules</h2>
+            <textarea id="combineRulesInput" rows="4" placeholder="Enter rule strings separated by new lines"></textarea>
+            <button id="combineRulesBtn">Combine Rules</button>
+            <pre id="combinedRulesOutput"></pre>
+        </div>
+
+        <div class="form-group">
+            <h2>Evaluate Rule</h2>
+            <textarea id="dataInput" rows="4" placeholder='{"age": 35, "salary": 60000, "department": "Sales"}'></textarea>
+            <button id="evaluateRuleBtn">Evaluate Rule</button>
+        </div>
+
+        <div class="result">
+            <h2>Result</h2>
+            <pre id="resultOutput"></pre>
+        </div>
+    </div>
+</body>
+</html>
